@@ -7,7 +7,6 @@ export const TransactionList = () => {
     //destructuring GlobalContext
     const {transactions} = useContext(GlobalContext);
     console.log(transactions);
-    const sign = transactions.amount <0 ? '-' : '+';
     return (
         <div>
             <h3>History</h3>
